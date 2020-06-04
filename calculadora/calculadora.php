@@ -1,0 +1,24 @@
+<?php
+class Calculadora {
+
+  private $total = 0;
+
+    public function add($n) {
+         $this->total += $n;
+    }
+    public function sub($n){
+        $this->total -= $n;
+    }
+    public function multiply($n){
+       $this->total *= $n;
+    }
+    public function divide($n){
+       $this->total /= $n;
+    }
+    public function total(){
+        return $this->total;
+    }
+    public function clear(){
+        $this->total = 0;
+    }
+}
